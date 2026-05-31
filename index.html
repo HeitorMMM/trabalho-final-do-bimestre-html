@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+</head>
+<body>
+
+    <!---header-->
+    <header>
+        <nav>
+        <img src="/src/imagens/logo.jpg" alt="Minério Viagens" class="logo">
+        <div class="bx.bx-menu" id="menu-icon"></div>
+        <ul class="nav-list">
+            <li><a href="/src/pages/cadastro.html">Cadastro</a></li>
+            <li><a href="/src/pages/sobre.html">Sobre</a></li>
+            <li><a href="/src/pages/destino.html">Destinos</a></li>
+            <li><a href="/src/pages/redes.html">Redes sociais</a></li>
+        </ul>
+        </nav>
+    </header>
+<h1>Bem vindo</h1>
+
+<p>Para onde você quer ir?</p>
+
+<!-- DESTINOS -->
+<section class="destinos">
+
+    <div class="titulo-section">
+        <h2>Destinos Populares</h2>
+        <p>Os lugares mais procurados pelos viajantes</p>
+    </div>
+
+    <!--BOTÃO DE MILHAS-->
+    <button class="btn-milhas" onclick="alternarMilhas()">✈ Ver em Milhas</button>
+
+    <div class="cards-destinos">
+
+        <div class="card-passagem">
+            <img src="/src/imagens/paris.jpg" alt="Paris">
+
+            <div class="card-info">
+                <h3>Paris</h3>
+                <p>Va para a cidade da luz!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="5500">R$ 5.500,00</p>
+            </div>
+        </div>
+
+        <div class="card-passagem">
+            <img src="/src/imagens/dubai.jpg" alt="Dubai">
+
+            <div class="card-info">
+                <h3>Dubai</h3>
+                <p>Conheça a cidade do futuro!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="8000">R$ 8.000,00</p>
+            </div>
+        </div>
+
+        <div class="card-passagem">
+            <img src="/src/imagens/tokio.jpg" alt="Tokyo">
+
+            <div class="card-info">
+                <h3>Tokyo</h3>
+                <p>Explore a mistura de tradição e modernidade!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="12000">R$ 12.000,00</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="/src/js/btnmilhas.js"></script>
+</body>
+</html>
