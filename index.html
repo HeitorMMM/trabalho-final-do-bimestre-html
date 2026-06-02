@@ -7,35 +7,51 @@
 </head>
 <body>
 
-    <!---header-->
+    <!-- HEADER -->
     <header>
         <nav>
         <img src="/src/imagens/logo.jpg" alt="Minério Viagens" class="logo">
         <div class="bx.bx-menu" id="menu-icon"></div>
         <ul class="nav-list">
             <li><a href="/src/pages/cadastro.html">Cadastro</a></li>
-            <li><a href="/src/pages/sobre.html">Sobre</a></li>
             <li><a href="/src/pages/destino.html">Destinos</a></li>
             <li><a href="/src/pages/redes.html">Redes sociais</a></li>
+            <li><a href="/src/pages/sobre.html">Sobre</a></li>
         </ul>
         </nav>
     </header>
 <h1>Bem vindo</h1>
 
-<p>Para onde você quer ir?</p>
+<h2>Para onde você quer ir?</h2>
 
 <!-- DESTINOS -->
 <section class="destinos">
 
     <div class="titulo-section">
-        <h2>Destinos Populares</h2>
-        <p>Os lugares mais procurados pelos viajantes</p>
+        <h3>Destinos Populares</h3>
+        <p>Explore os destinos mais procurados pelos nossos clientes!</p>
     </div>
 
-    <!--BOTÃO DE MILHAS-->
-    <button class="btn-milhas" onclick="alternarMilhas()">✈ Ver em Milhas</button>
+    <!-- BOTÃO DE MILHAS (js OK) -->
+    <button class="btn-milhas" onclick="alternarMilhas()">Ver em Milhas</button>
 
-    <div class="cards-destinos">
+    <!-- BOTÃO DE OFERTAS (js X) -->
+    <button class="btn-ofertas" onclick="mostrarOfertas()">Ver Ofertas Especiais</button>
+
+    <!-- SELEÇÃO DE DESTINOS (js OK) -->
+     <p>Selecione uma categoria:</p>
+    <select id="filtroDestino" onchange="filtrarDestinos()">
+
+        <option value="todos">Todos</option>
+        <option value="praias">Praia</option>
+        <option value="urbano">Urbano</option>
+        <option value="natureza">Natureza</option>
+        <option value="turistico">Turístico</option>
+
+    </select>
+
+    <!-- CARDS DE DESTINOS -->
+    <div class="cards-destinos" data-categoria="todos">
 
         <div class="card-passagem">
             <img src="/src/imagens/paris.jpg" alt="Paris">
@@ -72,9 +88,168 @@
 
     </div>
 
+    <div class="cards-destinos" data-categoria="praias">
+
+        <div class="card-passagem">
+            <img src="/src/imagens/baia-do-sancho.png" alt="Baía do Sancho">
+
+            <div class="card-info">
+                <h3>Baía do Sancho</h3>
+                <p>Uma das praias mais belas do Brasil!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="2500">R$ 2.500,00</p>
+            </div>
+        </div>
+
+        <div class="card-passagem">
+            <img src="/src/imagens/praia-dos-carneiros.png" alt="Praia dos Carneiros">
+
+            <div class="card-info">
+                <h3>Praia dos Carneiros</h3>
+                <p>Uma praia paradisíaca no litoral brasileiro!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="1000">R$ 1.000,00</p>
+            </div>
+        </div>
+
+        <div class="card-passagem">
+            <img src="/src/imagens/pontal-do-atalaia.png" alt="Prainhas do Pontal do Atalaia">
+
+            <div class="card-info">
+                <h3>Prainhas do Pontal do Atalaia</h3>
+                <p>Uma praia de tirar o fôlego no litoral do Rio de Janeiro!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="700">R$ 700,00</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cards-destinos" data-categoria="urbano">
+
+        <div class="card-passagem">
+            <img src="/src/imagens/sao-paulo.png" alt="São Paulo">
+
+            <div class="card-info">
+                <h3>São Paulo</h3>
+                <p>A cidade que nunca dorme!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="1000">R$ 1.000,00</p>
+            </div>
+        </div>
+
+        <div class="card-passagem">
+            <img src="/src/imagens/rio-de-janeiro.png" alt="Rio de Janeiro">
+
+            <div class="card-info">
+                <h3>Rio de Janeiro</h3>
+                <p>A cidade maravilhosa!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="1000">R$ 1.000,00</p>
+            </div>
+        </div>
+
+        <div class="card-passagem">
+            <img src="/src/imagens/curitiba.png" alt="Curitiba">
+
+            <div class="card-info">
+                <h3>Curitiba</h3>
+                <p>A capital do Paraná!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="800">R$ 800,00</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cards-destinos" data-categoria="natureza">
+
+        <div class="card-passagem">
+            <img src="/src/imagens/mauritius.png" alt="Mauritius">
+
+            <div class="card-info">
+                <h3>Mauritius</h3>
+                <p>Uma ilha paradisíaca no Oceano Índico!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="5500">R$ 5.500,00</p>
+            </div>
+        </div>
+
+        <div class="card-passagem">
+            <img src="/src/imagens/lombok.png" alt="Lombok">
+
+            <div class="card-info">
+                <h3>Lombok</h3>
+                <p>Uma ilha paradisíaca na Indonésia!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="8000">R$ 8.000,00</p>
+            </div>
+        </div>
+
+        <div class="card-passagem">
+            <img src="/src/imagens/cayman.jpg" alt="Ilhas Cayman">
+
+            <div class="card-info">
+                <h3>Ilhas Cayman</h3>
+                <p>Um destino de luxo no Caribe!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="12000">R$ 12.000,00</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cards-destinos" data-categoria="turistico">
+
+        <div class="card-passagem">
+            <img src="/src/imagens/machu-picchu.png" alt="Peru">
+
+            <div class="card-info">
+                <h3>Peru</h3>
+                <p>Descubra a cultura inca e a beleza natural do Peru!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="3500">R$ 3.500,00</p>
+            </div>
+        </div>
+
+        <div class="card-passagem">
+            <img src="/src/imagens/tokio.jpg" alt="Japão">
+
+            <div class="card-info">
+                <h3>Japão</h3>
+                <p>Descubra a cultura e a natureza do Japão!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="5000">R$ 5.000,00</p>
+            </div>
+        </div>
+
+        <div class="card-passagem">
+            <img src="/src/imagens/santa-catarina.png" alt="Santa Catarina">
+
+            <div class="card-info">
+                <h3>Santa Catarina</h3>
+                <p>A capital da cultura e da natureza!</p>
+                <p>Passagens a partir de:</p>
+                <p class="valor-passagem" data-valor="1200">R$ 1.200,00</p>
+            </div>
+        </div>
+
+    </div>
+
 </section>
 
+<!-- POR QUE ESCOLHER A MINÉRIO? -->
+ <div class="motivo-minerio">
+    <h3>Por que escolher a Minério Viagens?</h3>
+    <ul>
+        <li><strong>Experiência Única:</strong> Consultoria personalziada do início ao fim da sua viagem.</li>
+        <li><strong>Consultoria Completa:</strong> Roteiros pensados para você aproveitar cada momento sem preocupação.</li>
+        <li><strong>Condições Especiais:</strong> Condições facilitadas de pagamento que cabem no seu bolso.</li>
+    </ul>
+    <p>Com a Minério, você só precisa se preocupar em viver experiências inesquecíveis!</p>
+ </div>
 
 <script src="/src/js/milhas.js"></script>
+<script src="/src/js/destinos.js"></script>
 </body>
 </html>
