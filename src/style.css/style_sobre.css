@@ -1,0 +1,49 @@
+body{
+    background:#EAF4FF;
+    font-family:Arial, sans-serif;
+}
+
+header{
+    background:#002B5B;
+    padding:15px 40px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:130px;
+}
+
+.nav-list{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.nav-list a{
+    color:white;
+    text-decoration:none;
+}
+
+.sobre{
+    width:80%;
+    margin:60px auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.sobre h1{
+    color:#002B5B;
+    margin-bottom:20px;
+}
+
+.sobre p{
+    line-height:1.8;
+    color:#444;
+}

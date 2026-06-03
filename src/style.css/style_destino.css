@@ -1,0 +1,58 @@
+body{
+    background:#EAF4FF;
+    font-family:Arial, sans-serif;
+}
+
+header{
+    background:#002B5B;
+    padding:15px 40px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:130px;
+}
+
+.nav-list{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.nav-list a{
+    color:white;
+    text-decoration:none;
+}
+
+.container-destinos{
+    width:90%;
+    margin:50px auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card-destino{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.card-destino img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-destino h3{
+    padding:15px;
+    color:#002B5B;
+}
