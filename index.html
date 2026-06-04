@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inicio</title>
-    <link rel="stylesheet" href="src/css/style_geral.css">
+    <link rel="stylesheet" href="/src/css/style_geral.css">
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
         <nav>
-        <img src="src/img/logo.jpg" alt="Minério Viagens" class="logo">
+        <img src="/src/img/logo.jpg" alt="Minério Viagens" class="logo">
         <div class="bx.bx-menu" id="menu-icon"></div>
         <ul class="nav-list">
-            <li><a href="src/pages/cadastro.html">Cadastro</a></li>
-            <li><a href="src/pages/destino.html">Destinos</a></li>
-            <li><a href="src/pages/redes.html">Redes sociais</a></li>
-            <li><a href="src/pages/sobre.html">Sobre</a></li>
+            <li><a href="/src/pages/cadastro.html">Cadastro</a></li>
+            <li><a href="/src/pages/destino.html">Destinos</a></li>
+            <li><a href="/src/pages/redes.html">Redes sociais</a></li>
+            <li><a href="/src/pages/sobre.html">Sobre</a></li>
         </ul>
         </nav>
     </header>
@@ -29,61 +29,57 @@
 <section class="destinos">
 
     <div class="titulo-section">
-        <h3>Destinos Populares</h3>
-        <p>Explore os destinos mais procurados pelos nossos clientes!</p>
+        <h3>Descubra sua próxima viagem</h3>
     </div>
 
-    <!-- BOTÃO DE MILHAS (js OK) -->
-    <button class="btn-milhas" onclick="alternarMilhas()">Ver em Milhas</button>
-
-    <!-- BOTÃO DE OFERTAS (js X) -->
-    <button class="btn-ofertas" onclick="mostrarOfertas()">Ver Ofertas Especiais</button>
-
-    <!-- SELEÇÃO DE DESTINOS (js OK) -->
-     <p>Selecione uma categoria:</p>
+    <!-- SELEÇÃO DE DESTINOS -->
+    <p>Destinos</p>
     <select id="filtroDestino" onchange="filtrarDestinos()">
 
-        <option value="todos">Todos</option>
-        <option value="praias">Praia</option>
-        <option value="urbano">Urbano</option>
-        <option value="natureza">Natureza</option>
+        <option value="todos">Todos os destinos</option>
+        <option value="praias">Destinos de praia</option>
+        <option value="urbano">Aventuras urbanas</option>
+        <option value="natureza">Retiros naturais</option>
         <option value="turistico">Turístico</option>
 
     </select>
+
+    <!-- BOTÃO DE MILHAS -->
+    <button class="btn-milhas" onclick="alternarMilhas()">Ver em milhas</button>
 
     <!-- CARDS DE DESTINOS -->
     <div class="cards-destinos" data-categoria="todos">
 
         <div class="card-passagem">
-            <img src="src/img/paris.jpg" alt="Paris">
+            <img src="/src/img/paris.jpg" alt="Paris">
 
             <div class="card-info">
                 <h3>Paris</h3>
                 <p>Va para a cidade da luz!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="5500">R$ 5.500,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="4804.99">R$ 4.804,99</p>
             </div>
         </div>
 
         <div class="card-passagem">
-            <img src="src/img/dubai.jpg" alt="Dubai">
+            <img src="/src/img/dubai.jpg" alt="Dubai">
 
             <div class="card-info">
                 <h3>Dubai</h3>
                 <p>Conheça a cidade do futuro!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="8000">R$ 8.000,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="2993.10">R$ 2.993,10</p>
             </div>
         </div>
 
         <div class="card-passagem">
-            <img src="src/img/tokio.jpg" alt="Tokyo">
+            <img src="/src/img/tokio.jpg" alt="Tokyo">
 
             <div class="card-info">
-                <h3>Tokyo</h3>
+                <h3>Tóquio</h3>
                 <p>Explore a mistura de tradição e modernidade!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="12000">R$ 12.000,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="13839.43">R$ 13.839,43</p>
             </div>
         </div>
 
@@ -92,35 +88,35 @@
     <div class="cards-destinos" data-categoria="praias">
 
         <div class="card-passagem">
-            <img src="src/img/baia-do-sancho.png" alt="Baía do Sancho">
+            <img src="/src/img/maceio.png" alt="Maceió">
 
             <div class="card-info">
-                <h3>Baía do Sancho</h3>
-                <p>Uma das praias mais belas do Brasil!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="2500">R$ 2.500,00</p>
+                <h3>Maceió</h3>
+                <p>A capital da cultura nordestina!</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="2403.78">R$ 2.403,78</p>
             </div>
         </div>
 
         <div class="card-passagem">
-            <img src="src/img/praia-dos-carneiros.png" alt="Praia dos Carneiros">
+            <img src="/src/img/cancun.jpg" alt="Cancun">
 
             <div class="card-info">
-                <h3>Praia dos Carneiros</h3>
-                <p>Uma praia paradisíaca no litoral brasileiro!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="1000">R$ 1.000,00</p>
+                <h3>Cancun</h3>
+                <p>Uma praia paradisíaca no México!</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="2132.57">R$ 2.132,57</p>
             </div>
         </div>
 
         <div class="card-passagem">
-            <img src="src/img/pontal-do-atalaia.png" alt="Prainhas do Pontal do Atalaia">
+            <img src="/src/img/miami.jpg" alt="Miami">
 
             <div class="card-info">
-                <h3>Prainhas do Pontal do Atalaia</h3>
-                <p>Uma praia de tirar o fôlego no litoral do Rio de Janeiro!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="700">R$ 700,00</p>
+                <h3>Miami</h3>
+                <p>Uma cidade vibrante na Flórida!</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="3860.35">R$ 3.860,35</p>
             </div>
         </div>
 
@@ -129,35 +125,35 @@
     <div class="cards-destinos" data-categoria="urbano">
 
         <div class="card-passagem">
-            <img src="src/img/sao-paulo.png" alt="São Paulo">
+            <img src="/src/img/sao-paulo.jpg" alt="São Paulo">
 
             <div class="card-info">
                 <h3>São Paulo</h3>
                 <p>A cidade que nunca dorme!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="1000">R$ 1.000,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="1997.78">R$ 1.997,78</p>
             </div>
         </div>
 
         <div class="card-passagem">
-            <img src="src/img/rio-de-janeiro.png" alt="Rio de Janeiro">
+            <img src="/src/img/rio-de-janeiro.png" alt="Rio de Janeiro">
 
             <div class="card-info">
                 <h3>Rio de Janeiro</h3>
                 <p>A cidade maravilhosa!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="1000">R$ 1.000,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="1639.78">R$ 1.639,78</p>
             </div>
         </div>
 
         <div class="card-passagem">
-            <img src="src/img/curitiba.png" alt="Curitiba">
+            <img src="/src/img/curitiba.png" alt="Curitiba">
 
             <div class="card-info">
                 <h3>Curitiba</h3>
                 <p>A capital do Paraná!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="800">R$ 800,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="1809.00">R$ 1.809,00</p>
             </div>
         </div>
 
@@ -166,35 +162,35 @@
     <div class="cards-destinos" data-categoria="natureza">
 
         <div class="card-passagem">
-            <img src="src/img/mauritius.png" alt="Mauritius">
+            <img src="/src/img/mauritius.png" alt="Mauritius">
 
             <div class="card-info">
                 <h3>Mauritius</h3>
                 <p>Uma ilha paradisíaca no Oceano Índico!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="5500">R$ 5.500,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="10938.26">R$ 10.938,26</p>
             </div>
         </div>
 
         <div class="card-passagem">
-            <img src="src/img/lombok.png" alt="Lombok">
+            <img src="/src/img/lombok.png" alt="Lombok">
 
             <div class="card-info">
                 <h3>Lombok</h3>
                 <p>Uma ilha paradisíaca na Indonésia!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="8000">R$ 8.000,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="5349.19">R$ 5.349,19</p>
             </div>
         </div>
 
         <div class="card-passagem">
-            <img src="src/img/cayman.jpg" alt="Ilhas Cayman">
+            <img src="/src/img/cayman.jpg" alt="Ilhas Cayman">
 
             <div class="card-info">
                 <h3>Ilhas Cayman</h3>
                 <p>Um destino de luxo no Caribe!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="12000">R$ 12.000,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="9093.00">R$ 9.093,00</p>
             </div>
         </div>
 
@@ -203,35 +199,35 @@
     <div class="cards-destinos" data-categoria="turistico">
 
         <div class="card-passagem">
-            <img src="src/img/machu-picchu.png" alt="Peru">
+            <img src="/src/img/machu-picchu.png" alt="Peru">
 
             <div class="card-info">
                 <h3>Peru</h3>
                 <p>Descubra a cultura inca e a beleza natural do Peru!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="3500">R$ 3.500,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="2213.15">R$ 2.213,15</p>
             </div>
         </div>
 
         <div class="card-passagem">
-            <img src="src/img/tokio.jpg" alt="Japão">
+            <img src="/src/img/tokio.jpg" alt="Japão">
 
             <div class="card-info">
                 <h3>Japão</h3>
                 <p>Descubra a cultura e a natureza do Japão!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="5000">R$ 5.000,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="13839.43">R$ 13.839,43</p>
             </div>
         </div>
 
         <div class="card-passagem">
-            <img src="src/img/santa-catarina.png" alt="Santa Catarina">
+            <img src="/src/img/santa-catarina.png" alt="Santa Catarina">
 
             <div class="card-info">
                 <h3>Santa Catarina</h3>
                 <p>A capital da cultura e da natureza!</p>
-                <p>Passagens a partir de:</p>
-                <p class="valor-passagem" data-valor="1200">R$ 1.200,00</p>
+                <p>Preço a partir de:</p>
+                <p class="valor-passagem" data-valor="2494.00">R$ 2.494,78</p>
             </div>
         </div>
 
@@ -250,7 +246,7 @@
     <p>Com a Minério, você só precisa se preocupar em viver experiências inesquecíveis!</p>
  </div>
 
-<script src="src/js/milhas.js"></script>
-<script src="src/js/destinos.js"></script>
+<script src="/src/js/milhas.js"></script>
+<script src="/src/js/destinos.js"></script>
 </body>
 </html>
