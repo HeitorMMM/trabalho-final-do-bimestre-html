@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5fbff;
+}
+
+header{
+    background:#004b87;
+    padding:15px 40px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:120px;
+    border-radius:10px;
+}
+
+.nav-list{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.nav-list a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.banner-maceio img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.banner-conteudo{
+    text-align:center;
+    padding:30px;
+    background:white;
+}
+
+.btn-reservar{
+    background:#0077cc;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.sobre-maceio,
+.roteiro,
+.informacoes,
+.reserva{
+    width:85%;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+}
+
+.cards-atracoes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3,
+h2{
+    color:#004b87;
+}
+
+.dias{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.dia{
+    width:220px;
+    background:#e8f4ff;
+    padding:20px;
+    border-radius:10px;
+}
+
+footer{
+    background:#004b87;
+    padding:20px;
+    text-align:center;
+}
+
+footer a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+}
