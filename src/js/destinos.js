@@ -17,14 +17,14 @@ function filtrarDestinos() {
         // Mostrar todos
         if (categoriaSelecionada === "todos") {
 
-            destino.style.display = "block";
+            destino.style.display = "flex";
 
         }
 
         // Mostrar apenas categoria selecionada
         else if (categoriaCard === categoriaSelecionada) {
 
-            destino.style.display = "block";
+            destino.style.display = "flex";
 
         }
 

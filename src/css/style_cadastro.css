@@ -11,7 +11,7 @@ body{
 }
 
 header{
-    background: #002B5B;
+    background: #225eb7;
     padding: 15px 40px;
 }
 
@@ -61,4 +61,24 @@ button{
     border:none;
     border-radius:8px;
     cursor:pointer;
+}
+
+/* RODAPÉ */
+
+footer{
+    margin-top: 50px;
+    background: #225eb7;
+    padding: 25px;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #bcdcff;
 }

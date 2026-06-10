@@ -7,11 +7,15 @@
 
 body{
     background:#f5fbff;
+    color:#1f2d3d;
+    line-height:1.6;
 }
 
 header{
-    background:#004b87;
+    background:#225eb7;
     padding:15px 40px;
+    position: relative;
+    z-index: 3;
 }
 
 nav{
@@ -37,16 +41,44 @@ nav{
     font-weight:bold;
 }
 
-.banner-maceio img{
-    width:100%;
-    height:450px;
-    object-fit:cover;
+.banner-rio{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.banner-rio img{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
 }
 
 .banner-conteudo{
-    text-align:center;
-    padding:30px;
-    background:white;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 25px;
+    color: white;
+    background: linear-gradient(135deg, rgba(0, 75, 135, 0.8), rgba(0, 45, 90, 0.55));
+}
+
+.banner-conteudo h1{
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 15px;
+}
+
+.banner-conteudo p{
+    max-width: 700px;
+    font-size: 1.05rem;
 }
 
 .btn-reservar{
@@ -57,15 +89,37 @@ nav{
     text-decoration:none;
 }
 
-.sobre-maceio,
+.sobre-rio,
+.atracoes,
 .roteiro,
 .informacoes,
 .reserva{
-    width:85%;
-    margin:30px auto;
-    background:white;
-    padding:25px;
-    border-radius:15px;
+    position: relative;
+    z-index: 2;
+    width: min(90%, 1000px);
+    margin: 35px auto;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-rio h2,
+.atracoes h2,
+.roteiro h2,
+.informacoes h2,
+.reserva h2{
+    color:#004b87;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.sobre-rio p,
+.reserva p,
+.informacoes li,
+.roteiro p,
+.atracoes p{
+    color:#4d5b6b;
 }
 
 .cards-atracoes{
@@ -80,7 +134,13 @@ nav{
     background:white;
     border-radius:15px;
     overflow:hidden;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow:0 10px 24px rgba(0,0,0,.12);
 }
 
 .card img{
@@ -89,9 +149,13 @@ nav{
     object-fit:cover;
 }
 
-.card h3,
-h2{
+.card h3{
     color:#004b87;
+    margin:15px 15px 8px;
+}
+
+.card p{
+    padding:0 15px 15px;
 }
 
 .dias{
@@ -105,11 +169,25 @@ h2{
     width:220px;
     background:#e8f4ff;
     padding:20px;
-    border-radius:10px;
+    border-radius:12px;
+    border-left:4px solid #0077cc;
+}
+
+.dia h3{
+    color:#0077cc;
+    margin-bottom:8px;
+}
+
+.informacoes ul{
+    padding-left: 20px;
+}
+
+.informacoes li{
+    margin-bottom: 8px;
 }
 
 footer{
-    background:#004b87;
+    background:#225eb7;
     padding:20px;
     text-align:center;
 }

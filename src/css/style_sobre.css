@@ -11,7 +11,7 @@ body{
 }
 
 header{
-    background:#002B5B;
+    background:#225eb7;
     padding:15px 40px;
 }
 
@@ -53,4 +53,171 @@ nav{
 .sobre p{
     line-height:1.8;
     color:#444;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #EAF4FF;
+}
+
+/* HEADER */
+
+header{
+    background: #225eb7;
+    padding: 15px 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 130px;
+    border-radius: 10px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-list a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list a:hover{
+    color: #bcdcff;
+}
+
+/* SOBRE */
+
+.container{
+    width: 80%;
+    max-width: 1000px;
+    margin: 60px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.container h2{
+    font-size: 40px;
+    color: #225eb7;
+    margin-bottom: 25px;
+}
+
+.container p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* MISSÃO VISÃO VALORES */
+
+.valores{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color: #225eb7;
+    margin-bottom: 15px;
+}
+
+.card p{
+    color: #555;
+    line-height: 1.7;
+}
+
+/* NÚMEROS */
+
+.numeros{
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.numero{
+    background: #225eb7;
+    color: white;
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.numero h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* EQUIPE */
+
+.equipe{
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.equipe h2{
+    color: #225eb7;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.equipe p{
+    color: #555;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* RODAPÉ */
+
+footer{
+    margin-top: 50px;
+    background: #225eb7;
+    padding: 25px;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #bcdcff;
 }
