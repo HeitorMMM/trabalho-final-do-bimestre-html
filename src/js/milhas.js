@@ -42,4 +42,17 @@ function alternarMilhas() {
 
     // Alterna estado
     mostrandoMilhas = !mostrandoMilhas;
+
+    const botaoMilhas = document.getElementById("btnMilhas");
+
+    if (botaoMilhas) {
+        botaoMilhas.classList.toggle("active", mostrandoMilhas);
+        botaoMilhas.setAttribute("aria-pressed", mostrandoMilhas.toString());
+
+        const textoBotao = botaoMilhas.querySelector(".btn-milhas-text");
+
+        if (textoBotao) {
+            textoBotao.textContent = mostrandoMilhas ? "Milhas: ON" : "Milhas: OFF";
+        }
+    }
 }

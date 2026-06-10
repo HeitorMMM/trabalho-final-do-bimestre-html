@@ -8,6 +8,9 @@
 body{
     background: #EAF4FF;
     font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -66,10 +69,10 @@ button{
 /* RODAPÉ */
 
 footer{
-    margin-top: 50px;
+    margin-top: auto;
     background: #225eb7;
     padding: 25px;
-    text-align: center;
+    text-align: left;
 }
 
 footer a{

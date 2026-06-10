@@ -45,7 +45,9 @@
     </select>
 
     <!-- BOTÃO DE MILHAS -->
-    <button class="btn-milhas" onclick="alternarMilhas()">Ver em milhas</button>
+    <button id="btnMilhas" class="btn-milhas" onclick="alternarMilhas()" aria-pressed="false">
+        <span class="btn-milhas-text">Milhas: OFF</span>
+    </button>
 
     <!-- CARDS DE DESTINOS -->
     <div class="cards-destinos" data-categoria="todos">
